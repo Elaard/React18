@@ -1,6 +1,6 @@
 # React 18.0
 Just testing news from react 18
- * new api -> new hooks
+ * new api -> [useId, useTransition, useDeferredValue, useSyncExternalStore, useInsersionEffect,  ]
  * concurenncy -> foundational update to React's core rendering model.
     In a concurrent render, this is not always the case. React may start rendering an update, pause in the middle, then continue later. It may even abandon an in-progress render altogether. React guarantees that the UI will appear consistent even if a render is interrupted. To do this, it waits to perform DOM mutations until the end, once the entire tree has been evaluated. With this capability, React can prepare new screens in the background without blocking the main thread. This means the UI can respond immediately to user input even if it’s in the middle of a large rendering task, creating a fluid user experience.
 
@@ -14,3 +14,4 @@ Just testing news from react 18
   * suspense allows you  display fallback ntil its children finished loading, it can be used with fetching also. Its not recomended to use as      hoc, it works best when its integrated deeply into app like in router or data layer.
   * server components -> experimental
   * batching -> multiple state updates into a single re-render for better performance. Without automatic batching we only abtched upadtes inside react event handlers.
+  * transitions -> to handle more important and less importants rerenders

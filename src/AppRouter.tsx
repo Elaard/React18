@@ -4,6 +4,7 @@ import ErrorPage from './pages/ErrorPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Routes } from './Routes';
 import BatchingPage from './pages/BatchingPage';
+import SuspensePage from './pages/SuspensePage';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: Routes.Batching,
         element: <BatchingPage />,
+      },
+      {
+        path: Routes.Suspense,
+        element: <SuspensePage />,
       },
     ],
   },
